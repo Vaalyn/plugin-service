@@ -1,0 +1,28 @@
+{
+    "name": "vaalyn/plugin-service",
+    "description": "A plugin service for the Slim Framework 3",
+    "type": "library",
+    "license": "Apache-2.0",
+    "authors": [
+        {
+            "name": "Vaalyn",
+            "email": "vaalyndev@gmail.com"
+        }
+    ],
+    "require": {
+        "psr/container": "^1.0",
+        "slim/slim": "^3.11",
+        "vaalyn/config-loader-service": "dev-master"
+    },
+	"repositories": [
+		{
+			"type": "git",
+			"url": "git@github.com:Vaalyn/config-loader-service.git"
+		}
+	],
+	"autoload": {
+        "psr-4": {
+			"Vaalyn\\PluginService\\": "src"
+        }
+    }
+}
